@@ -1,0 +1,18 @@
+project = "KubeS"
+
+network_cidr_block = {
+  development = "10.0.0.0/16"
+  production  = "10.1.0.0/16"
+}
+
+network_subnet_count = {
+  development = 1
+  production  = 1
+}
+
+user_ssh_keys = {
+  sadok = ""
+}
+
+full_access_users = [ "" ]
+read_only_users = [ "" ]
