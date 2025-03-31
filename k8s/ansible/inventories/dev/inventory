@@ -1,0 +1,13 @@
+
+[kube_control_plane]
+node1 ansible_host=34.203.226.208 ip=10.240.100.141 etcd_member_name=etcd1
+node2 ansible_host=44.202.236.71 ip=10.240.100.84 etcd_member_name=etcd2
+
+[kube_control_plane:vars]
+supplementary_addresses_in_ssl_keys = ["34.203.226.208", "44.202.236.71"]
+
+[etcd:children]
+kube_control_plane
+
+[kube_node]
+worker1 ansible_host=44.204.145.86 ip=10.240.100.232

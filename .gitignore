@@ -16,3 +16,12 @@
 
 
 *.plan
+
+tfplan
+.DS_Store
+
+
+# Prevent crash.log
+crash.log
+
+*.key

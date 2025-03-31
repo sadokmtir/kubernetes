@@ -1,0 +1,6 @@
+scripts/trust-policy.json
+
+# Exception: Include specific terraform.tfstate file
+!terraform.tfstate
+!terraform.tfstate.backup
+!terraform.tfvars
