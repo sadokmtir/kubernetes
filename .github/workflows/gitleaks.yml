@@ -31,7 +31,7 @@ jobs:
           GITLEAKS_REPORT_PATH: gitleaks-report.sarif
       
       - name: Upload SARIF report
-        if: success() && test -f gitleaks-report.sarif
+        if: success() && hashFiles('gitleaks-report.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: gitleaks-report.sarif
