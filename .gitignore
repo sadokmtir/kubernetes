@@ -16,3 +16,14 @@
 
 
 *.plan
+
+tfplan
+.DS_Store
+
+
+# Prevent crash.log
+crash.log
+
+#git-crypt
+.git-crypt/keys/
+*.key

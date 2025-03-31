@@ -1,0 +1,18 @@
+[default]
+region = us-east-1
+[profile management-acount-profile]
+sso_session = my-sso
+sso_account_id = MANAGEMENT_ACCOUND_ID
+sso_role_name = AdministratorAccess
+region = us-east-1
+output = json
+[profile admin-account-profile]
+sso_session = my-sso
+sso_account_id = ADMIN_ACCOUND_ID
+sso_role_name = AdministrativePermissionSet
+region = us-east-1
+output = json
+[sso-session my-sso]
+sso_start_url = https://d-0000000.awsapps.com/start
+sso_region = eu-central-1
+sso_registration_scopes = sso:account:access

@@ -1,0 +1,8 @@
+# Encrypt terraform state files
+init-accounts/*.tfstate filter=git-crypt diff=git-crypt
+init-accounts/*.tfstate.backup filter=git-crypt diff=git-crypt
+init-accounts/*.tfvars filter=git-crypt diff=git-crypt
+
+# ssh key for accessing the nodes
+k8s/ansible/inventories/dev/.ssh/id_rsa filter=git-crypt diff=git-crypt
+k8s/ansible/inventories/dev/inventory.ini filter=git-crypt diff=git-crypt
